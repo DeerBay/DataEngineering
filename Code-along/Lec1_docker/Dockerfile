@@ -3,6 +3,6 @@ FROM python:3.11
 # Host container 
 ADD main.py .
 
-RUN pip install plotly_express
+RUN pip install plotly_express dash
 
 CMD ["python", "./main.py"]
