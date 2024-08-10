@@ -1,4 +1,3 @@
-import sys
 import plotly_express as px
 import numpy as np
 from dash import Dash, dcc, Output, Input
@@ -28,6 +27,4 @@ def _dice_simulator_histogram(rolls, number_dices):
 if __name__ == "__main__":
     print('hello from the docker side')
 
-    app.run_server(debug=True)
-
-print(f"Python version: {sys.version}")
+    app.run_server(host="0.0.0.0", debug=True, port=8050)
